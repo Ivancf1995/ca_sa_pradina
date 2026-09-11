@@ -1,0 +1,5 @@
+.DS_Store
+*.log
+.idea/
+.vscode/
+stitch_listo_el_pollo_website/
