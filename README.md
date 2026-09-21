@@ -1,17 +1,20 @@
-# Listo el Pollo — Ca Sa Padrina
+# Listo el Pollo — Ca Sa Pradina
 
 Landing estática (HTML + JS ligero) para Coolify. Monopágina ES. CTA: llamar para reservar.
 
+Dominio live: **https://casapradina.es** (`listoelpollo.es` no disponible).
+
 ## SEO / dominio
 
-Antes de indexar en serio, sustituye `https://listoelpollo.es` en:
+Canonical, OG, JSON-LD, `sitemap.xml`, `robots.txt` y `llms.txt` apuntan a `https://casapradina.es`.
 
-- `index.html` (`site-origin`, canonical, OG, JSON-LD)
-- `sitemap.xml`
-- `robots.txt` (línea Sitemap)
-- `llms.txt`
+Alinea la ficha de **Google Business Profile** (nombre Ca Sa Pradina, horario, fotos, teléfono).
 
-Y alinea la ficha de **Google Business Profile** (nombre, horario, fotos, teléfono).
+Search Console: verificación DNS o archivo HTML. GSC **no** instala cookies en visitantes. Analytics (GA4) sí → entonces banner de consentimiento.
+
+## Legal
+
+`aviso-legal.html` · `privacidad.html` · `cookies.html` (titular María Inés Pavlovich, NIE X3088709Q, minespatina@gmail.com). Footer enlaza las tres. Sin banner: GSC sí, GA no. **Mapa Google embebido siempre**.
 
 ## Coolify
 

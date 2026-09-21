@@ -27,4 +27,4 @@ Allow: /
 User-agent: CCBot
 Disallow: /
 
-Sitemap: https://listoelpollo.es/sitemap.xml
+Sitemap: https://casapradina.es/sitemap.xml
