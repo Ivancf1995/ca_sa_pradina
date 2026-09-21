@@ -14,7 +14,7 @@ Search Console: verificación DNS o archivo HTML. GSC **no** instala cookies en 
 
 ## Legal
 
-`aviso-legal.html` · `privacidad.html` · `cookies.html` (titular María Inés Pavlovich, NIE X3088709Q, minespatina@gmail.com). Footer enlaza las tres. Sin banner: GSC sí, GA no. **Mapa Google embebido siempre**.
+`aviso-legal.html` · `privacidad.html` · `cookies.html` (titular María Inés Pavlovich, NIE X3088709Q, minespatina@gmail.com). Footer enlaza las tres. **`noindex,follow`** — no van en sitemap. Sin banner: GSC sí, GA no. **Mapa Google embebido siempre**.
 
 ## Coolify
 

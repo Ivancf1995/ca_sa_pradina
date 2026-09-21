@@ -1,7 +1,7 @@
 # Legal — Ca Sa Pradina / Listo el Pollo
 
 Live: https://casapradina.es  
-Páginas públicas (2026-09-21, datos del titular): `/aviso-legal.html` · `/privacidad.html` · `/cookies.html`
+Páginas (footer, **noindex**): `/aviso-legal.html` · `/privacidad.html` · `/cookies.html`. Sitemap = solo `/`.
 
 - Titular: María Inés Pavlovich
 - NIE: X3088709Q
