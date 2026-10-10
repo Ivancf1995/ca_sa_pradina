@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Cookies — Listo el Pollo · Ca Sa Pradina</title>
-<meta name="description" content="Información de cookies de casapradina.es. Search Console no instala cookies en visitantes. Analytics, si se añade, exigirá consentimiento."/>
+<meta name="description" content="Información de cookies de casapradina.es: Google Analytics con consentimiento y mapa de Google Maps."/>
 <link rel="canonical" href="https://casapradina.es/cookies.html"/>
 <meta name="robots" content="noindex,follow"/>
 <link rel="icon" type="image/png" href="assets/logo.png"/>
@@ -24,6 +24,8 @@
   th, td { border:1px solid #e2bfb4; padding:0.4rem 0.5rem; text-align:left; vertical-align:top; }
   footer .inner { display:flex; flex-wrap:wrap; gap:1rem; }
   footer a { color:#ffb59e; }
+  .btn { font-family:Anybody,sans-serif; font-weight:700; padding:0.6rem 1rem; border:2px solid var(--brown); background:transparent; color:var(--ink); cursor:pointer; }
+  .btn:hover { background:#ffebe2; }
 </style>
 </head>
 <body>
@@ -32,23 +34,36 @@
 </header>
 <main>
   <h1>Cookies y tecnologías similares</h1>
-  <p>Última actualización: 21 de septiembre de 2026.</p>
+  <p>Última actualización: 10 de octubre de 2026.</p>
 
   <h2>1. Resumen</h2>
-  <p><a href="https://casapradina.es/">casapradina.es</a> es informativo. <strong>No</strong> hay cookies propias de medición ni anuncios. No hay banner: no hay analítica ni publicidad. Search Console no cuenta como cookie de visitante. El mapa de Google se carga al entrar.</p>
+  <p><a href="https://casapradina.es/">casapradina.es</a> es informativo. Hay banner de consentimiento para <strong>Google Analytics</strong>. Search Console no cuenta como cookie de visitante. El mapa de Google se carga al entrar.</p>
   <p>Titular: María Inés Pavlovich · <a href="mailto:minespatina@gmail.com">minespatina@gmail.com</a>.</p>
 
-  <h2>2. Search Console</h2>
-  <p>Google Search Console lo usa el titular para ver búsquedas e indexación. La verificación (DNS o archivo HTML) <strong>no instala cookies en quien visita la web</strong>. No hace falta «aceptar cookies» por usar GSC.</p>
+  <h2>2. Almacenamiento propio</h2>
+  <table>
+    <thead><tr><th>Clave</th><th>Tipo</th><th>Finalidad</th><th>Duración</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><code>csp_analytics_consent</code></td>
+        <td>localStorage</td>
+        <td>Guardar si has aceptado o rechazado Google Analytics</td>
+        <td>Hasta que borres los datos del sitio o revoques tu elección</td>
+      </tr>
+    </tbody>
+  </table>
 
-  <h2>3. Analytics</h2>
-  <p>Google Analytics u otra medición <strong>no está activa</strong> aún (falta measurement ID). La web ya prepara eventos de clic en llamar/reservar (<code>cta-events.js</code>). Cuando se active GA4, será cookie no esencial: banner con rechazar tan fácil como aceptar, y el script no se cargará antes del consentimiento.</p>
+  <h2>3. Analytics (solo si aceptas)</h2>
+  <p>Si pulsas «Aceptar analítica» en el banner, cargamos <strong>Google Analytics 4</strong> (Google). Identificador: <strong>G-EEFDRBVZRY</strong>. Finalidad: estadísticas agregadas de uso. Base jurídica: <strong>consentimiento</strong> (art. 6.1.a RGPD). Si rechazas, no se carga. Eventos de clic en llamar/reservar (<code>cta-events.js</code>) solo se envían cuando GA está activo.</p>
+  <p>Google puede usar cookies propias (p. ej. <code>_ga</code>, <code>_ga_*</code>). Políticas: <a href="https://policies.google.com/privacy">privacidad</a> · <a href="https://policies.google.com/technologies/cookies">cookies</a> · <a href="https://support.google.com/analytics/answer/6004245">Analytics</a>.</p>
 
   <h2>4. Mapa de Google</h2>
   <p>El mapa embebido <strong>se carga al visitar</strong> la página de inicio. Google puede instalar cookies y tratar la IP. Hay un enlace «Abrir en Google Maps» además del iframe.</p>
-  <p>Políticas de Google: <a href="https://policies.google.com/privacy">privacidad</a> · <a href="https://policies.google.com/technologies/cookies">cookies</a>.</p>
 
-  <h2>5. Fuentes y CDN</h2>
+  <h2>5. Search Console</h2>
+  <p>Google Search Console lo usa el titular para ver búsquedas e indexación. La verificación (DNS o archivo HTML) <strong>no instala cookies en quien visita la web</strong>.</p>
+
+  <h2>6. Fuentes y CDN</h2>
   <table>
     <thead><tr><th>Recurso</th><th>Tipo</th><th>Notas</th></tr></thead>
     <tbody>
@@ -58,7 +73,11 @@
     </tbody>
   </table>
 
-  <h2>6. Gestión</h2>
+  <h2>7. Aceptar, rechazar o revocar</h2>
+  <p>Al entrar por primera vez verás un aviso con <strong>Rechazar analítica</strong> y <strong>Aceptar analítica</strong>, con la misma facilidad de uso.</p>
+  <p><button type="button" class="btn" id="csp-revoke-analytics">Revocar consentimiento de analítica</button></p>
+
+  <h2>8. Gestión en el navegador</h2>
   <p>Puedes borrar cookies y datos del sitio en el navegador y bloquear terceros. Más: <a href="privacidad.html">privacidad</a> · <a href="aviso-legal.html">aviso legal</a>.</p>
 </main>
 <footer>
@@ -69,5 +88,6 @@
     <a href="cookies.html">Cookies</a>
   </div>
 </footer>
+<script src="analytics-consent.js" defer></script>
 </body>
 </html>

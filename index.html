@@ -526,7 +526,22 @@ tailwind.config = {
 </div>
 </div>
 </footer>
+<div id="csp-cookie-banner" class="fixed inset-x-0 bottom-0 z-[1000] p-4 bg-surface/95 backdrop-blur border-t-4 border-rustic-brown shadow-[0_-8px_32px_rgba(45,21,11,0.15)]" role="dialog" aria-modal="false" aria-labelledby="csp-cookie-title" aria-describedby="csp-cookie-desc" hidden>
+  <div class="max-w-max-width mx-auto grid gap-3">
+    <p id="csp-cookie-title" class="font-anybody font-bold text-lg text-on-surface m-0">Cookies y privacidad</p>
+    <p id="csp-cookie-desc" class="font-body-md text-on-surface-variant m-0">
+      Si aceptas, usamos Google Analytics para medir el uso del sitio de forma agregada. El mapa de Google Maps puede usar cookies de Google. Puedes rechazar la analítica sin perder la navegación. Más detalle en nuestra
+      <a class="text-primary font-bold underline underline-offset-2" href="cookies.html">política de cookies</a>.
+    </p>
+    <div class="flex flex-wrap gap-3">
+      <button type="button" id="csp-cookie-reject" class="min-w-[10rem] px-4 py-2.5 border-2 border-rustic-brown bg-surface text-on-surface font-anybody font-bold hover:bg-surface-container transition-colors">Rechazar analítica</button>
+      <button type="button" id="csp-cookie-accept" class="min-w-[10rem] px-4 py-2.5 border-2 border-rustic-brown bg-primary text-on-primary font-anybody font-bold hover:bg-primary-hover transition-colors shadow-[3px_3px_0_0_#38180c]">Aceptar analítica</button>
+    </div>
+  </div>
+</div>
 <script src="app.js" defer></script>
 <script src="cta-events.js" defer></script>
+<script src="analytics-consent.js" defer></script>
 </body>
 </html>
+
