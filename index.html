@@ -202,14 +202,18 @@ tailwind.config = {
 <a class="text-on-surface-variant font-label-sm uppercase tracking-wider py-1 hover:text-primary transition-colors" href="#contacto">Contacto</a>
 </div>
 <div class="hidden md:flex items-center gap-3">
-<div id="lang-menu" class="relative flex items-center gap-1 font-label-sm uppercase tracking-wider" aria-label="Idioma">
-<a class="px-2 py-1 font-bold text-primary border-b-2 border-secondary" href="/" hreflang="es" lang="es">ES</a>
-<a class="px-2 py-1 text-on-surface-variant hover:text-primary" href="/ca/" hreflang="ca" lang="ca">CA</a>
-<a class="px-2 py-1 text-on-surface-variant hover:text-primary" href="/en/" hreflang="en" lang="en">EN</a>
+<div id="lang-menu" class="relative font-label-sm uppercase tracking-wider">
+<button type="button" id="lang-toggle" class="inline-flex items-center gap-1 px-2 py-1 font-bold text-primary border-b-2 border-secondary hover:text-secondary transition-colors" aria-expanded="false" aria-haspopup="listbox" aria-controls="lang-list" aria-label="Idioma">
+ES
+<span class="material-symbols-outlined text-[18px] leading-none" aria-hidden="true">expand_more</span>
+</button>
+<ul id="lang-list" class="hidden absolute right-0 top-full mt-2 min-w-[5rem] bg-surface border-2 border-rustic-brown shadow-[3px_3px_0_0_#38180c] z-50 py-1" role="listbox" aria-label="Idioma">
+<li role="none"><a class="block px-3 py-2 font-bold text-primary bg-surface-container-low" href="/" hreflang="es" lang="es" role="option" aria-selected="true" aria-current="page">ES</a></li>
+<li role="none"><a class="block px-3 py-2 text-on-surface-variant hover:text-primary hover:bg-surface-container-low" href="/ca/" hreflang="ca" lang="ca" role="option" aria-selected="false">CA</a></li>
+<li role="none"><a class="block px-3 py-2 text-on-surface-variant hover:text-primary hover:bg-surface-container-low" href="/en/" hreflang="en" lang="en" role="option" aria-selected="false">EN</a></li>
+</ul>
 </div>
-<a class="bg-primary hover:bg-secondary text-on-primary font-anybody font-bold py-3 px-6 rounded hover:translate-y-0.5 transition-all border-2 border-rustic-brown shadow-[3px_3px_0_0_#38180c]" href="tel:+34871931319" data-cta="reserve" data-cta-location="nav">
-  ¡Reserva ahora!
-</a>
+<a class="shrink-0 whitespace-nowrap bg-primary hover:bg-secondary text-on-primary font-anybody font-bold py-3 px-6 rounded hover:translate-y-0.5 transition-all border-2 border-rustic-brown shadow-[3px_3px_0_0_#38180c]" href="tel:+34871931319" data-cta="reserve" data-cta-location="nav">¡Reserva ahora!</a>
 </div>
 <button id="nav-toggle" type="button" class="md:hidden text-primary p-2" aria-controls="nav-mobile" aria-expanded="false" aria-label="Abrir menú">
 <span class="material-symbols-outlined text-[32px]" aria-hidden="true">menu</span>
@@ -222,10 +226,16 @@ tailwind.config = {
 <a class="font-label-sm uppercase tracking-wider font-bold text-rustic-brown py-2" href="#ubicacion">Ubicación</a>
 <a class="font-label-sm uppercase tracking-wider font-bold text-rustic-brown py-2" href="#contacto">Contacto</a>
 <a class="font-label-sm uppercase tracking-wider font-bold text-rustic-brown py-2" href="#reservar">Reservar / FAQ</a>
-<div class="flex gap-3 py-2 font-label-sm uppercase tracking-wider">
-<a class="font-bold text-primary" href="/" hreflang="es">ES</a>
-<a class="text-rustic-brown" href="/ca/" hreflang="ca">CA</a>
-<a class="text-rustic-brown" href="/en/" hreflang="en">EN</a>
+<div class="relative font-label-sm uppercase tracking-wider py-2" data-lang-menu>
+<button type="button" class="lang-toggle inline-flex items-center gap-1 px-2 py-1 font-bold text-primary border-b-2 border-secondary" aria-expanded="false" aria-haspopup="listbox" aria-controls="lang-list-mobile" aria-label="Idioma">
+ES
+<span class="material-symbols-outlined text-[18px] leading-none" aria-hidden="true">expand_more</span>
+</button>
+<ul id="lang-list-mobile" class="hidden mt-2 min-w-[5rem] bg-surface border-2 border-rustic-brown shadow-[3px_3px_0_0_#38180c] py-1" role="listbox" aria-label="Idioma">
+<li role="none"><a class="block px-3 py-2 font-bold text-primary bg-surface-container-low" href="/" hreflang="es" lang="es" role="option" aria-selected="true" aria-current="page">ES</a></li>
+<li role="none"><a class="block px-3 py-2 text-rustic-brown hover:text-primary" href="/ca/" hreflang="ca" lang="ca" role="option" aria-selected="false">CA</a></li>
+<li role="none"><a class="block px-3 py-2 text-rustic-brown hover:text-primary" href="/en/" hreflang="en" lang="en" role="option" aria-selected="false">EN</a></li>
+</ul>
 </div>
 <a class="bg-primary text-on-primary font-anybody font-bold py-3 px-6 text-center border-2 border-rustic-brown shadow-[3px_3px_0_0_#38180c]" href="tel:+34871931319" data-cta="reserve" data-cta-location="nav-mobile">¡Reserva ahora!</a>
 </div>

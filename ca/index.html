@@ -57,10 +57,16 @@ tailwind.config = {
 <img alt="Logo Listo el Pollo" class="w-12 h-12 rounded-full border-2 border-primary object-contain" src="../assets/logo-nav.png" width="48" height="48"/>
 <span>Listo el Pollo <span class="text-sm text-rustic-brown opacity-80 font-bold">Ca Sa Pradina</span></span>
 </a>
-<div id="lang-menu" class="flex items-center gap-2 text-sm uppercase tracking-wider">
-<a class="px-2 py-1 text-on-surface-variant hover:text-primary" href="/" hreflang="es">ES</a>
-<a class="px-2 py-1 font-bold text-primary border-b-2 border-secondary" href="/ca/" hreflang="ca">CA</a>
-<a class="px-2 py-1 text-on-surface-variant hover:text-primary" href="/en/" hreflang="en">EN</a>
+<div id="lang-menu" class="relative text-sm uppercase tracking-wider">
+<button type="button" id="lang-toggle" class="inline-flex items-center gap-1 px-2 py-1 font-bold text-primary border-b-2 border-secondary" aria-expanded="false" aria-haspopup="listbox" aria-controls="lang-list" aria-label="Idioma">
+CA
+<span class="material-symbols-outlined text-[18px] leading-none" aria-hidden="true">expand_more</span>
+</button>
+<ul id="lang-list" class="hidden absolute right-0 top-full mt-2 min-w-[5rem] bg-surface border-2 border-rustic-brown shadow-[3px_3px_0_0_#38180c] z-50 py-1" role="listbox" aria-label="Idioma">
+<li role="none"><a class="block px-3 py-2 text-on-surface-variant hover:text-primary" href="/" hreflang="es" lang="es" role="option" aria-selected="false">ES</a></li>
+<li role="none"><a class="block px-3 py-2 font-bold text-primary bg-white/60" href="/ca/" hreflang="ca" lang="ca" role="option" aria-selected="true" aria-current="page">CA</a></li>
+<li role="none"><a class="block px-3 py-2 text-on-surface-variant hover:text-primary" href="/en/" hreflang="en" lang="en" role="option" aria-selected="false">EN</a></li>
+</ul>
 </div>
 </div>
 </nav>
@@ -110,6 +116,7 @@ tailwind.config = {
     </div>
   </div>
 </div>
+<script src="../app.js" defer></script>
 <script src="../cta-events.js" defer></script>
 <script src="../scroll-depth.js" defer></script>
 <script src="../analytics-consent.js" defer></script>
