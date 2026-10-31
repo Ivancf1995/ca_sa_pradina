@@ -4,22 +4,28 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta name="site-origin" content="https://casapradina.es"/>
-<title>Listo el Pollo — Ca Sa Pradina | Pollo asado en Palma</title>
-<meta name="description" content="Pollo asado tradicional en Carrer Gral. Ricardo Ortega 9, Palma (Ca Sa Pradina). Combos, croquetas y alioli. Mar–dom 11:00–16:00. Llama al 871 931 319 para reservar: se acaban."/>
+<title>Listo el Pollo | Pollo asado en Palma — reserva en Ca Sa Pradina</title>
+<meta name="description" content="Listo el Pollo: pollo asado en Palma (Ca Sa Pradina). Combos, croquetas y alioli. Reserva por teléfono 871 931 319 — mar–dom 11:00–16:00. Se acaban cada día."/>
 <meta name="robots" content="index,follow,max-image-preview:large"/>
 <link rel="canonical" href="https://casapradina.es/"/>
+<link rel="alternate" hreflang="es" href="https://casapradina.es/"/>
+<link rel="alternate" hreflang="ca" href="https://casapradina.es/ca/"/>
+<link rel="alternate" hreflang="en" href="https://casapradina.es/en/"/>
+<link rel="alternate" hreflang="x-default" href="https://casapradina.es/"/>
 <link rel="icon" type="image/png" href="assets/logo.png"/>
 <link rel="apple-touch-icon" href="assets/logo.png"/>
 <meta property="og:type" content="website"/>
 <meta property="og:locale" content="es_ES"/>
+<meta property="og:locale:alternate" content="ca_ES"/>
+<meta property="og:locale:alternate" content="en_GB"/>
 <meta property="og:site_name" content="Listo el Pollo"/>
-<meta property="og:title" content="Listo el Pollo — Ca Sa Pradina | Pollo asado en Palma"/>
-<meta property="og:description" content="Pollo asado tradicional en Palma. Llama al 871 931 319 para reservar antes de que se acaben."/>
+<meta property="og:title" content="Listo el Pollo | Pollo asado en Palma — Ca Sa Pradina"/>
+<meta property="og:description" content="Listo el Pollo: pollo asado en Palma. Llama al 871 931 319 para reservar antes de que se acaben."/>
 <meta property="og:url" content="https://casapradina.es/"/>
 <meta property="og:image" content="https://casapradina.es/assets/hero-pollo.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Listo el Pollo — Ca Sa Pradina"/>
-<meta name="twitter:description" content="Pollo asado en Palma. Reserva llamando al 871 931 319."/>
+<meta name="twitter:title" content="Listo el Pollo | Pollo asado en Palma"/>
+<meta name="twitter:description" content="Listo el Pollo en Ca Sa Pradina. Reserva llamando al 871 931 319."/>
 <meta name="twitter:image" content="https://casapradina.es/assets/hero-pollo.png"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
@@ -144,7 +150,7 @@ tailwind.config = {
       "@id": "https://casapradina.es/#business",
       "name": "Listo el Pollo — Ca Sa Pradina",
       "alternateName": "Listo el Pollo",
-      "description": "Pollo asado tradicional para llevar en Palma. Reserva por teléfono: se acaban.",
+      "description": "Listo el Pollo: pollo asado tradicional para llevar en Palma (Ca Sa Pradina). Reserva por teléfono: se acaban.",
       "url": "https://casapradina.es/",
       "image": "https://casapradina.es/assets/hero-pollo.png",
       "telephone": "+34871931319",
@@ -196,7 +202,12 @@ tailwind.config = {
 <a class="text-on-surface-variant font-label-sm uppercase tracking-wider py-1 hover:text-primary transition-colors" href="#contacto">Contacto</a>
 </div>
 <div class="hidden md:flex items-center gap-3">
-<a class="bg-primary hover:bg-secondary text-on-primary font-anybody font-bold py-3 px-6 rounded hover:translate-y-0.5 transition-all border-2 border-rustic-brown shadow-[3px_3px_0_0_#38180c]" href="tel:+34871931319">
+<div id="lang-menu" class="relative flex items-center gap-1 font-label-sm uppercase tracking-wider" aria-label="Idioma">
+<a class="px-2 py-1 font-bold text-primary border-b-2 border-secondary" href="/" hreflang="es" lang="es">ES</a>
+<a class="px-2 py-1 text-on-surface-variant hover:text-primary" href="/ca/" hreflang="ca" lang="ca">CA</a>
+<a class="px-2 py-1 text-on-surface-variant hover:text-primary" href="/en/" hreflang="en" lang="en">EN</a>
+</div>
+<a class="bg-primary hover:bg-secondary text-on-primary font-anybody font-bold py-3 px-6 rounded hover:translate-y-0.5 transition-all border-2 border-rustic-brown shadow-[3px_3px_0_0_#38180c]" href="tel:+34871931319" data-cta="reserve" data-cta-location="nav">
   ¡Reserva ahora!
 </a>
 </div>
@@ -210,7 +221,13 @@ tailwind.config = {
 <a class="font-label-sm uppercase tracking-wider font-bold text-rustic-brown py-2" href="#promos">Promos</a>
 <a class="font-label-sm uppercase tracking-wider font-bold text-rustic-brown py-2" href="#ubicacion">Ubicación</a>
 <a class="font-label-sm uppercase tracking-wider font-bold text-rustic-brown py-2" href="#contacto">Contacto</a>
-<a class="bg-primary text-on-primary font-anybody font-bold py-3 px-6 text-center border-2 border-rustic-brown shadow-[3px_3px_0_0_#38180c]" href="tel:+34871931319">¡Reserva ahora!</a>
+<a class="font-label-sm uppercase tracking-wider font-bold text-rustic-brown py-2" href="#reservar">Reservar / FAQ</a>
+<div class="flex gap-3 py-2 font-label-sm uppercase tracking-wider">
+<a class="font-bold text-primary" href="/" hreflang="es">ES</a>
+<a class="text-rustic-brown" href="/ca/" hreflang="ca">CA</a>
+<a class="text-rustic-brown" href="/en/" hreflang="en">EN</a>
+</div>
+<a class="bg-primary text-on-primary font-anybody font-bold py-3 px-6 text-center border-2 border-rustic-brown shadow-[3px_3px_0_0_#38180c]" href="tel:+34871931319" data-cta="reserve" data-cta-location="nav-mobile">¡Reserva ahora!</a>
 </div>
 </div>
 </nav>
@@ -222,12 +239,12 @@ tailwind.config = {
 <div class="inline-block bg-primary text-on-primary font-label-sm uppercase tracking-widest px-4 py-2 border-2 border-rustic-brown transform -rotate-2 shadow-[3px_3px_0_0_#38180c]">
   Tradición Familiar
 </div>
-<h1 class="font-display-lg text-rustic-brown text-5xl md:text-7xl leading-tight drop-shadow-sm">El mejor pollo<br/><span class="text-primary">asado</span> de Palma<br/>de Mallorca.</h1>
+<h1 class="font-display-lg text-rustic-brown text-5xl md:text-7xl leading-tight drop-shadow-sm">Listo el Pollo:<br/><span class="text-primary">pollo asado</span> en Palma</h1>
 <p class="font-body-lg text-on-surface-variant max-w-xl mx-auto md:mx-0 font-medium">
-  Pollo jugoso a la receta de la abuela, patatas caseras y muy crujientes, croquetas caseras. Listo para llevar. <strong class="text-rustic-brown">Se acaban cada día: llama y reserva el tuyo.</strong>
+  En Ca Sa Pradina: pollo jugoso a la receta de la abuela, patatas caseras muy crujientes y croquetas. Para llevar. <strong class="text-rustic-brown">Se acaban cada día: llama al 871 931 319 y reserva el tuyo.</strong>
 </p>
 <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center sm:items-stretch">
-<a class="bg-primary hover:bg-secondary text-on-primary font-headline-lg-mobile py-4 px-8 border-2 border-rustic-brown hover:translate-y-1 transition-all text-center shadow-[5px_5px_0_0_#38180c] tracking-wide" href="tel:+34871931319">
+<a class="bg-primary hover:bg-secondary text-on-primary font-headline-lg-mobile py-4 px-8 border-2 border-rustic-brown hover:translate-y-1 transition-all text-center shadow-[5px_5px_0_0_#38180c] tracking-wide" href="tel:+34871931319" data-cta="reserve" data-cta-location="hero">
   ¡Reserva ahora!
 </a>
 <p class="font-label-sm text-on-surface-variant self-center">871 931 319 · sin pedido online</p>
@@ -467,6 +484,41 @@ tailwind.config = {
 </div>
 </section>
 
+<section class="py-24 bg-surface-container-low px-margin-mobile md:px-margin-desktop scroll-mt-20 border-t-4 border-rustic-brown" id="reservar" data-section="reservar">
+<div class="max-w-max-width mx-auto max-w-3xl">
+<div class="text-center mb-12 space-y-4">
+<h2 class="font-display-lg text-primary uppercase inline-block border-b-4 border-secondary pb-2">Reservar pollo asado en Palma</h2>
+<p class="font-body-lg text-on-surface-variant font-medium">Listo el Pollo en Ca Sa Pradina. Sin pedido online: llama y te lo guardamos.</p>
+</div>
+<div class="space-y-6">
+<details class="bg-surface-paper border-4 border-rustic-brown p-6 shadow-[4px_4px_0_0_#38180c] open:shadow-[6px_6px_0_0_#D9231D]">
+<summary class="font-headline-lg-mobile text-rustic-brown cursor-pointer list-none flex justify-between items-center gap-4">
+<span>¿Cómo reservo en Listo el Pollo?</span>
+<span class="material-symbols-outlined text-primary" aria-hidden="true">expand_more</span>
+</summary>
+<p class="font-body-md text-on-surface-variant mt-4">Llama al <a class="text-primary font-bold" href="tel:+34871931319" data-cta="reserve" data-cta-location="faq">871 931 319</a>. Te reservamos el pollo asado (entero, medio o cuarto) y los combos. Se acaban cada día.</p>
+</details>
+<details class="bg-surface-paper border-4 border-rustic-brown p-6 shadow-[4px_4px_0_0_#38180c]">
+<summary class="font-headline-lg-mobile text-rustic-brown cursor-pointer list-none flex justify-between items-center gap-4">
+<span>¿Dónde está el pollo asado en Palma?</span>
+<span class="material-symbols-outlined text-primary" aria-hidden="true">expand_more</span>
+</summary>
+<p class="font-body-md text-on-surface-variant mt-4">Carrer Gral. Ricardo Ortega, 9 (Llevant), 07006 Palma — Ca Sa Pradina. Martes a domingo 11:00–16:00.</p>
+</details>
+<details class="bg-surface-paper border-4 border-rustic-brown p-6 shadow-[4px_4px_0_0_#38180c]">
+<summary class="font-headline-lg-mobile text-rustic-brown cursor-pointer list-none flex justify-between items-center gap-4">
+<span>¿Hacéis pollo al ast / pollos asados para llevar?</span>
+<span class="material-symbols-outlined text-primary" aria-hidden="true">expand_more</span>
+</summary>
+<p class="font-body-md text-on-surface-variant mt-4">Sí: pollo asado (al ast) para llevar, con patatas caseras, croquetas y alioli. Reserva por teléfono antes de venir.</p>
+</details>
+</div>
+<div class="mt-10 text-center">
+<a class="inline-block bg-primary hover:bg-secondary text-on-primary font-anybody font-bold py-4 px-8 border-2 border-rustic-brown shadow-[5px_5px_0_0_#38180c]" href="tel:+34871931319" data-cta="reserve" data-cta-location="faq-cta">Llamar para reservar — 871 931 319</a>
+</div>
+</div>
+</section>
+
 <section class="py-24 bg-background px-margin-mobile md:px-margin-desktop scroll-mt-20" id="ubicacion">
 <div class="max-w-max-width mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
 <div class="space-y-8" id="contacto">
@@ -541,6 +593,7 @@ tailwind.config = {
 </div>
 <script src="app.js" defer></script>
 <script src="cta-events.js" defer></script>
+<script src="scroll-depth.js" defer></script>
 <script src="analytics-consent.js" defer></script>
 </body>
 </html>

@@ -8,7 +8,9 @@ Listo el Pollo está en Carrer Gral. Ricardo Ortega 9, 07006 Palma (Illes Balear
 
 ## Enlaces
 
-- Web: https://casapradina.es/
+- Web (ES): https://casapradina.es/
+- Català: https://casapradina.es/ca/
+- English: https://casapradina.es/en/
 - Mapa: https://www.google.com/maps/search/?api=1&query=Carrer+Gral.+Ricardo+Ortega+9+07006+Palma
 - Contacto: llamar al +34 871 931 319 para reservar (sin pedido online)
 
